@@ -207,10 +207,19 @@
 				if (localStorage.is != null){
 					modui(true);
 				}
+				else {
+					modui(true);
+				}
 			} else if (localStorage.ui == "1") {
 				if (localStorage.is2 != null) {
 					modui(false);
 				}
+				else {
+					modui(true);
+				}
+			}
+			else {
+				modui(true);
 			}
 		} else {
 			localStorage.ui = "0";
