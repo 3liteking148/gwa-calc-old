@@ -6,7 +6,6 @@
 	function changegrade(subject, amt) {
 		var value2 = parseFloat(document.getElementById(subject).innerHTML);
 		if (value2 + 0.25 * amt < 1) {
-			return 0;
 		} else if (value2 + 0.25 * amt <= 3) {
 			document.getElementById(subject).innerHTML = (value2 + 0.25 * amt).toFixed(2);
 		} else if (value2 + 0.25 * amt <= 5) {
